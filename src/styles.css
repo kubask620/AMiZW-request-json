@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1f2430;
+    color: #f5f7fa;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.creator-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+}
+
+.panel {
+    background: #2b3245;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+.character-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #4e5870;
+    background: #161b26;
+    color: #fff;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats-box,
+.preview-box {
+    background: #202636;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.preview-box + .preview-box {
+    margin-top: 16px;
+}
+
+.points-info {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.error {
+    margin: 0;
+    color: #ff8f8f;
+    font-size: 14px;
+}
+
+.button-row {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #4e5870;
+    color: white;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: #3b82f6;
+}
+
+.btn.danger {
+    background: #dc2626;
+}
+
+.save-status {
+    width: 100%;
+    margin: 6px 0 0;
+    color: #c7d2fe;
+}
+
+@media (max-width: 900px) {
+    .creator-layout {
+        grid-template-columns: 1fr;
+    }
+}
